@@ -6,20 +6,45 @@ Our team's goal is to develop a comprehensive train travel API, facilitating use
 
 
 
-## Node.Js 
 
-You need to initialize npm
+## Installation Guide
+
+### Backend  
+#### Node.Js  
+
+You need to initialize npm  
 ```
 npm init
-```
+```  
 
-Install Express
+Install Express  
 ```
 npm install express
-```
+```  
 
 
-Install Nodemon
-```
+Install Nodemon  
+
+```  
 npm install nodemon —save-dev
 ```
+
+
+### Frontend
+#### React  
+.  
+```
+npm install cors
+```  
+Install react icons  
+```
+npm i react-icons
+```
+
+Run project
+Install react icons  
+```
+npm start
+```
+
+
