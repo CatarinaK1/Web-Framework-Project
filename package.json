@@ -4,19 +4,22 @@
   "description": "Web Framework Project for the Backend Module",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CatarinaK1/Web-Framework-Project.git"
   },
-  "author": "Catarina",
+  "author": "Catarina, Niko, Valtteri",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CatarinaK1/Web-Framework-Project/issues"
   },
   "homepage": "https://github.com/CatarinaK1/Web-Framework-Project#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2"
   },
   "devDependencies": {
