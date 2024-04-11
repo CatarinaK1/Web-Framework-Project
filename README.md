@@ -47,4 +47,9 @@ Install react icons
 npm start
 ```
 
+Bootstrap  
+
+```
+npm install react-bootstrap bootstrap
+```
 
