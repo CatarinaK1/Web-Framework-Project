@@ -1,0 +1,111 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children vertically */
+    justify-content: center;
+}
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.HeaderImage {
+    display: flex; /* Add display flex */
+    justify-content: center; /* Center child horizontally */
+    align-items: center; /* Center child vertically */
+    position: relative;
+}
+
+.HeaderImage img {
+    /* width: 1400px; */
+    width: 100%;
+    /* height: auto; */
+    height: auto;
+}
+.TextOnImage {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+    color: white; /* Optionally, set the color of the text */
+    font-size: 84px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
+}
+
+.TextOnImage h1 {
+    font-size: 54px;
+
+}
+
+
+
+.TrainForm {
+    background-color: black; /* Add black background to the form */
+    padding: 30px; /* Add padding to the form */
+    padding-right: 90px;
+    padding-left: 90px;
+    margin-top: 0px; /* Add margin between the header image and the form */
+}
+
+.TrainForm h2 {
+    font-size: 24px;
+    color: rgb(255, 10, 10);
+    margin-bottom: 30px; /* Add margin between the header image and the form */
+    /* border-bottom: 20px solid #DA0C0C;  */
+}
+
+.destination{
+    border-bottom: 5px solid #119DA4;
+
+
+}
+
+.TrainForm h3 {
+    font-size: 14px;
+    color: aliceblue;
+
+}
+  
+.TrainForm form {
+    padding: 20px; /* Add padding to the form */
+
+
+}
+  
+  /* Additional styling for form elements if needed */
+.TrainForm .form-row {
+    margin-bottom: 10px; /* Add margin between form rows */
+  }
+  
+.TrainForm input,
+.TrainForm .react-datepicker-wrapper {
+    margin-right: 10px; /* Add margin between form elements */
+  }
+
+.card{
+    width: 400px;
+    margin-bottom: 20px; /* Add margin bottom to create space between cards */
+    
+
+}
+
+h6{
+
+    font-size: 34px;
+
+
+
+}
+.cardImage{
+    height: 80%;
+
+}
+
+@media (max-width: 480px) {
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -4,7 +4,7 @@ import FooterCSS from './footer.module.css';
 const Footer = () => {
 
   return (
-    <div>Footer</div>
+    <div className={FooterCSS}>Footer</div>
 
   );
 };

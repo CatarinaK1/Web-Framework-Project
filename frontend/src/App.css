@@ -39,6 +39,8 @@ li{
 .icon{
   font-size: 2rem;
   cursor: pointer;
+  color: rgb(231, 0, 0);
+  margin-right: 20px;
 
 }
 
