@@ -58,3 +58,11 @@ Router DOM
 npm install react-router-dom
 ```
 
+Date picker
+
+```
+npm install react-datepicker --save
+
+```
+
+
