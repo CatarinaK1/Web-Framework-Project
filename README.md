@@ -29,6 +29,10 @@ Install Nodemon
 npm install nodemon —save-dev
 ```
 
+MongoDB
+```
+npm install mongoose
+```
 
 ### Frontend
 #### React  
@@ -42,7 +46,6 @@ npm i react-icons
 ```
 
 Run project
-Install react icons  
 ```
 npm start
 ```
