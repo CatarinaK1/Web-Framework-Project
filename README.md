@@ -31,7 +31,7 @@ npm install nodemon —save-dev
 
 MongoDB
 ```
-npm install mongoose
+npm install mongodb
 ```
 
 ### Frontend
