@@ -40,7 +40,7 @@ const FavoriteDestination = () => {
 
         {/* iterate through the objects, they are treated as an array of objects */}
         {FavoriteDestinationCity.map((FavoriteDestinationCityItem) => (
-          <div className="col-md-6 col-lg-4 mb-4" key={FavoriteDestinationCityItem.id} style={{ height: '300px',  width: '350px' }}>
+          <div className="col-md-6 col-lg-4 mb-4" key={FavoriteDestinationCityItem.id} style={{ height: '300px',  width: '300px' }}>
             <div className="card h-100 shadow">
             <img src={FavoriteDestinationCityItem.image} className={`card-img-top ${HomeCSS.cardImage}`} alt="City" />
               <div className="card-header text-muted">
@@ -51,9 +51,8 @@ const FavoriteDestination = () => {
                 <MdLocationPin />{FavoriteDestinationCityItem.Destination}
                 </h6>
                 <div className="d-flex justify-content-center">
-
-                {/* <a href="https://github.com/CatarinaK1" target="_blank" rel="noopener noreferrer" className={`btn btn-dark ${ProjectCSS.socialButton}`}>
-                  <FaGithub /> GitHub
+                {/* Need to create a button to autofill search options */}
+                {/* <a href="" target="_blank" rel="noopener noreferrer" className={`btn btn-dark ${ProjectCSS.socialButton}`}>
                 </a> */}
               </div>
               </div>

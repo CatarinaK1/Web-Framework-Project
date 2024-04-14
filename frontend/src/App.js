@@ -5,6 +5,7 @@ import Footer from './components/Footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home/home';
 import FavoriteDestination from './components/Home/FavoriteDestination';
+import TrainSchedule from './components/Home/TrainSchedule';
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
         <TrainNavbar />
         <Home/>
         <FavoriteDestination/>
+        <TrainSchedule/>
         <Footer />
       </div>
 

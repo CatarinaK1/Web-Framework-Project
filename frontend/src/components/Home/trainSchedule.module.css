@@ -1,0 +1,93 @@
+
+.trainScheduleSection {
+    margin-top: 100px; /* Add margin to create space between this section and the previous one */
+    /* margin-bottom: 250px; */
+    background-color: #0C445A;
+    padding: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children vertically */
+    justify-content: center;
+  }
+  
+  .trainScheduleSection h2{
+    color: #dee2e6;
+    border-bottom: 5px solid #e80000;
+  }
+
+/* trainSchedule.module.css */
+
+.TrainScheduleTitle {
+  display: flex; /* Display elements side by side */
+  align-items: center; /* Align items vertically */
+}
+
+.TrainScheduleTitleIcon{
+  color: #f8f9fa;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.TrainScheduleTitle h2 {
+  margin-left: 10px; /* Add some spacing between icon and text */
+}
+
+.TrainDestinationDeparture p{
+  font-size: 14px;
+  color: #dee2e6;
+}
+
+.DepartureDestinationContainer {
+  background-color: #119DA4; /* blue background */
+  color: #fbfbfb; /*Font color*/
+  padding: 20px; /* Add padding for spacing */
+  margin: 20px; /* Add some margin to separate from title */
+  border-radius: 20px;
+}
+
+
+.DepartureDestinationContainer h3 {
+
+  margin-bottom: 5px; /* Add some margin to separate from title */
+}
+
+.CityandIcon {
+  display: flex; /* Display elements side by side */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 20px;
+}
+.LocationIcon{
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  margin-right: 20px;
+
+}
+
+.LocationIconDestination{
+
+  color: rgb(252, 0, 0);
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+
+
+}
+
+.trainSchedule {
+  background-color: #f8f9fa; /* Background color for the train schedule section */
+  padding: 20px; /* Add padding to the train schedule section */
+}
+
+  
+.trainSchedule h3{
+   /* background-color: #8400ff; /* Background color for the train schedule section */
+    /*padding: 20px; /* Add padding to the train schedule section */
+    font-size: 22px;
+  }
+.scheduleRow {
+    border-bottom: 1px solid #dee2e6; /* Add border between rows in the schedule */
+  }
+  
+  /* Additional styles can be added as needed */
+  

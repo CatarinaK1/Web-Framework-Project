@@ -102,6 +102,20 @@ h6{
 
 }
 
+.LocationIcon{
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(231, 0, 0);
+    margin-right: 20px;
+  
+}
+.CalendarIcon{
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(231, 0, 0);
+    margin-right: 20px;
+  
+}
 @media (max-width: 480px) {
 
     img {
