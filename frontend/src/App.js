@@ -6,21 +6,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home/home';
 import FavoriteDestination from './components/Home/FavoriteDestination';
 import TrainSchedule from './components/Home/TrainSchedule';
-
+import {Route, Routes} from "react-router-dom";
+import LoginPage from './components/Login/login';
 
 
 
 const App = () => {
   return (
+    <>
+      {/* <div> */}
+      <TrainNavbar />
+        <Routes>
 
-      <div>
-        <TrainNavbar />
-        <Home/>
-        <FavoriteDestination/>
-        <TrainSchedule/>
-        <Footer />
-      </div>
+          <Route path="/" element={<><Home /><FavoriteDestination /><TrainSchedule /></>}/>
+          <Route path="/login" element={<><LoginPage /></>}/>
 
+
+        </Routes>
+      {/* </div> */}
+      <Footer />
+      </>
   );
 }
 

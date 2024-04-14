@@ -7,13 +7,13 @@ import { FaLocationDot } from "react-icons/fa6";
 const TrainSchedule = () => {
     // Sample data for train schedule
     const scheduleData = [
-      { hour: '08:00', train: 'Express 123', track: 'A' },
-      { hour: '10:30', train: 'Local 456', track: 'B' },
-      { hour: '12:45', train: 'Express 789', track: 'C' },
-      { hour: '08:00', train: 'Express 123', track: 'A' },
-      { hour: '10:30', train: 'Local 456', track: 'B' },
-      { hour: '12:45', train: 'Express 789', track: 'C' },
-      { hour: '08:00', train: 'Express 123', track: 'A' }
+      { Departurehour: '08:00', Arrivalhour: '12:45',train: 'Express 123', track: 'A' },
+      { Departurehour: '10:30', Arrivalhour: '12:45',train: 'Local 456', track: 'B' },
+      { Departurehour: '12:45', Arrivalhour: '12:45',train: 'Express 789', track: 'C' },
+      { Departurehour: '08:00', Arrivalhour: '12:45',train: 'Express 123', track: 'A' },
+      { Departurehour: '10:30', Arrivalhour: '12:45', train: 'Local 456', track: 'B' },
+      { Departurehour: '12:45', Arrivalhour: '12:45',train: 'Express 789', track: 'C' },
+      { Departurehour: '08:00', Arrivalhour: '12:45',train: 'Express 123', track: 'A' }
 
       // Add more schedule data as needed
     ];
@@ -51,7 +51,10 @@ const TrainSchedule = () => {
             <div className={`col-md-8 ${TrainCSS.trainSchedule}`}>
               <div className={`row ${TrainCSS.scheduleRow}`}>
                 <div className="col">
-                  <h3>Hour</h3>
+                  <h3>Departure Time</h3>
+                </div>
+                <div className="col">
+                  <h3>Arrival time</h3>
                 </div>
                 <div className="col">
                   <h3>Train Number</h3>
@@ -64,7 +67,10 @@ const TrainSchedule = () => {
               {scheduleData.map((item, index) => (
                 <div className={`row ${TrainCSS.scheduleRow}`} key={index}>
                   <div className="col">
-                    <p>{item.hour}</p>
+                    <p>{item.Departurehour}</p>
+                  </div>
+                  <div className="col">
+                    <p>{item.Arrivalhour}</p>
                   </div>
                   <div className="col">
                     <p>{item.train}</p>
