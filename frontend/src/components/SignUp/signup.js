@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import LoginCSS from './login.module.css'; // Import CSS for styling
+import LoginCSS from './signup.module.css'; // Import CSS for styling
 import TravelersImage from '../../assets/travelers1.jpg';
 
-const LoginForm = () => {
+const SignUpForm = () => {
   // State variables for email and password
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -64,4 +64,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default SignUpForm;

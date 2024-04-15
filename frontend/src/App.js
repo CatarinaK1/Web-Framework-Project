@@ -8,6 +8,7 @@ import FavoriteDestination from './components/Home/FavoriteDestination';
 import TrainSchedule from './components/Home/TrainSchedule';
 import {Route, Routes} from "react-router-dom";
 import LoginPage from './components/Login/login';
+import SignUpPage from './components/SignUp/signup';
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
 
           <Route path="/" element={<><Home /><FavoriteDestination /><TrainSchedule /></>}/>
           <Route path="/login" element={<><LoginPage /></>}/>
+          <Route path="/signup" element={<SignUpPage/>}/>
 
 
         </Routes>

@@ -1,0 +1,63 @@
+.loginContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .Travelerimage{
+    width: 95%;
+  }
+  
+  .imageColumn {
+    flex: 1;
+    
+  }
+  
+  .loginForm {
+    flex: 1;
+    padding: 20px;
+    align-self: center;
+  }
+  
+  .loginForm form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .loginForm h1 {
+    font-size: 48px;
+    color: #119DA4;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #e80000;
+  }
+  
+  .loginForm h2 {
+    font-size: 18px;
+    color: #0C445A;
+  }
+  .loginForm .formGroup {
+    margin-bottom: 10px;
+  }
+  
+  
+  .loginForm input {
+    padding: 10px 60px 10px 60px; /* Adjust padding as needed */
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Add a border to create a rectangle */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    background-color: #f2f2f2; /* Set background color to grey */
+    margin-bottom: 10px; /* Add some spacing between input fields */
+  }
+  
+  .loginForm button {
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background-color: #119DA4;
+    margin: 5px;
+    padding: 10px 60px 10px 60px;
+  
+  }
+  
