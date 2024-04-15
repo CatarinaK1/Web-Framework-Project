@@ -8,24 +8,24 @@ const Footer = () => {
   <div className='bg-dark text-center text-white'>
       <div className='p-4 pb-0'>
         <section className={FooterCSS.iconCollectionContainer}>
-          <div outline color="light" floating className={FooterCSS.iconCollection} href='#!' role='button'>
-            <FaFacebook  fab icon='facebook-f' />
+          <div color="light" className={FooterCSS.iconCollection} href='#!' role='button'>
+            <FaFacebook  icon='facebook-f' />
           </div>
 
-          <div outline color="light" floating className={FooterCSS.iconCollection} href='#!' role='button'>
-            <FaTwitter  fab icon='twitter' />
+          <div color="light" className={FooterCSS.iconCollection} href='#!' role='button'>
+            <FaTwitter  icon='twitter' />
           </div>
 
-          <div outline color="light" floating className={FooterCSS.iconCollection} href='#!' role='button'>
-            <FaInstagram  fab icon='instagram' />
+          <div color="light" className={FooterCSS.iconCollection} href='#!' role='button'>
+            <FaInstagram  icon='instagram' />
           </div>
 
-          <div outline color="light" floating className={FooterCSS.iconCollection} href='#!' role='button'>
-            <FaLinkedinIn  fab icon='linkedin-in' />
+          <div color="light" className={FooterCSS.iconCollection} href='#!' role='button'>
+            <FaLinkedinIn  icon='linkedin-in' />
           </div>
 
-          <div outline color="light" floating className={FooterCSS.iconCollection} href='#!' role='button'>
-            <FaGithub  fab icon='github' />
+          <div color="light" className={FooterCSS.iconCollection} href='#!' role='button'>
+            <FaGithub  icon='github' />
           </div>
         </section>
       </div>
