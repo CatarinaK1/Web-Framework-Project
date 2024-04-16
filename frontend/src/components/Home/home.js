@@ -52,7 +52,7 @@ const Home = () => {
           </div>
           {/* Submit button */}
           <div className="col">
-          <button type="submit" className="btn btn-primary">Search</button>
+          <button type="submit" className={HomeCSS.TrainFormButton}>Search</button>
           </div>
       </div>
     </div>
