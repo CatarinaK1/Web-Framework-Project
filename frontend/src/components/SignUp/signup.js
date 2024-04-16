@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LoginCSS from './signup.module.css'; // Import CSS for styling
 import TravelersImage from '../../assets/travelers1.jpg';
+import {Link} from "react-router-dom";
 
 const SignUpForm = () => {
   // State variables for email and password
@@ -81,8 +82,13 @@ const SignUpForm = () => {
               required
             />
           </div>
+          <div className={LoginCSS.CreateAccount}><p>Already have an account? <Link to="/login">Login</Link></p></div>
           <button type="submit" className={LoginCSS.loginForm}>Create</button>
         </form>
+
+        {/* If error variable is not empty, error message will appear on the screen */}
+        {error && <span className={LoginCSS.error}>{error}</span>}
+  
       </div>
 
     </div>

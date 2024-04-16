@@ -72,11 +72,12 @@ const LoginForm = () => {
               required
             />
           </div>
+          {/* Create an account button */}
+          <div className={LoginCSS.CreateAccount}><p>Don't have an account? <Link to="/signup">Create an account</Link></p></div>
           <button type="submit" className={LoginCSS.loginForm}>Login</button>
 
         </form>
-      {/* Create an account button */}
-      <div className={LoginCSS.CreateAccount}><p>Don't have an account? <Link to="/signup">Create an account</Link></p></div>
+
      
       {/* Error message */}
       {error && <span className={LoginCSS.error}>{error}</span>}
