@@ -34,6 +34,15 @@ MongoDB
 npm install mongodb
 ```
 
+```
+npm install mongoose
+```
+
+Necessary for secure credential storing.  
+```
+npm install dotenv
+```
+
 ### Frontend
 #### React  
 .  
