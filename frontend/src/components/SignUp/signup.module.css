@@ -43,13 +43,16 @@
   
   
   .loginForm input {
-    padding: 10px 60px 10px 60px; /* Adjust padding as needed */
-    margin-top: 5px;
-    border: 1px solid #ccc; /* Add a border to create a rectangle */
-    border-radius: 5px; /* Add border-radius for rounded corners */
-    background-color: #f2f2f2; /* Set background color to grey */
-    margin-bottom: 10px; /* Add some spacing between input fields */
+
+    height: 48px;
+    width: 400px;
+    font-size: large;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding-left: 8px;
+    background-color: #eaeef1;
   }
+  
   
   .loginForm button {
     color: white;

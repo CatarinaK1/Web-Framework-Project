@@ -22,27 +22,6 @@ connectToDB()
 
 // Account module
 const Account = require("./models/Account");
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
-// const client = new MongoClient(uri, {
-//     serverApi: {
-//       version: ServerApiVersion.v1,
-//       strict: true,
-//       deprecationErrors: true,
-//     }
-//   });
-//   async function run() {
-//     try {
-      // Connect the client to the server	(optional starting in v4.7)
-      // await client.connect();
-      // Send a ping to confirm a successful connection
-    //   await client.db("admin").command({ ping: 1 });
-    //   console.log("Pinged your deployment. You successfully connected to MongoDB!");
-    // } finally {
-      // Ensures that the client will close when you finish/error
-  //     await client.close();
-  //   }
-  // }
-  // run().catch(console.dir);
 
 //Login route
 app.post("/login", async (req, res) => {
@@ -73,9 +52,9 @@ app.post("/login", async (req, res) => {
 });
 
 //Register route route
-app.post("/register", async (req, res) => {
+app.post("/signup", async (req, res) => {
   try {
-      const { username, password } = req.body;
+      const { username, email, password } = req.body;
 
       // Check if username already exists
       const existingAccount = await Account.findOne({ username });
@@ -84,7 +63,7 @@ app.post("/register", async (req, res) => {
       }
 
       // Create a new account
-      const newAccount = new Account({ username, password });
+      const newAccount = new Account({ username, email, password });
       await newAccount.save();
 
       console.log("Account created successfully");
