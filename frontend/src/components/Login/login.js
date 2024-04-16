@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
-import LoginCSS from './login.module.css'; // Import CSS for styling
-import TravelersImage from '../../assets/travelers1.jpg';
-import {Link} from "react-router-dom";
+//import LoginCSS from './login.module.css'; // Import CSS for styling
 
 const LoginForm = () => {
   // State variables for email and password
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
 
   // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-    // console.log('Username:', username);
-    // console.log('Password:', password);
+    // Perform login logic here (e.g., call an authentication API)
+    console.log('Username:', username);
+    console.log('Password:', password);
 
     fetch('http://localhost:3080/login', {
       method: 'POST',
@@ -22,37 +20,19 @@ const LoginForm = () => {
       },
       body: JSON.stringify({username, password})
     })
-    // .then ((r) => r.json())
-    // .then ((r) => console.log(r))
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Login failed');
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data); // Handle successful login response
-      // Redirect or perform any other action after successful login
-    })
-    .catch((error) => {
-      console.error('Login error:', error); // Handle login error
-      setError('Invalid username or password'); // Set error message
-      // Display error message to the user
-    });
+    .then ((r) => r.json())
+    .then ((r) => console.log(r))
 
 
   };
 
   return (
-    <div className={LoginCSS.loginContainer}>
-      <div className={LoginCSS.imageColumn}>
-      <img className={LoginCSS.Travelerimage} src={TravelersImage} alt="A train station"/></div> {/* Red column */}
-      <div className={LoginCSS.loginForm}>
-        <h1 className={LoginCSS.loginForm}>Sign in</h1>
+    <div className="login-container">
+      <div className="login-form">
+        <h2>Login</h2>
         <form onSubmit={handleSubmit}>
-          <div className={LoginCSS.loginForm}>
-            <h2>Username</h2>
-            <label htmlFor="username"></label>
+          <div className="form-group">
+            <label htmlFor="username">Username</label>
             <input
               type="text"
               id="username"
@@ -61,9 +41,8 @@ const LoginForm = () => {
               required
             />
           </div>
-          <div className={LoginCSS.loginForm}>
-            <h2>Password</h2>
-            <label htmlFor="password"></label>
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               id="password"
@@ -72,16 +51,10 @@ const LoginForm = () => {
               required
             />
           </div>
-          <button type="submit" className={LoginCSS.loginForm}>Login</button>
-
+          <button type="submit">Login</button>
         </form>
-      {/* Create an account button */}
-      <div className={LoginCSS.CreateAccount}><p>Don't have an account? <Link to="/signup">Create an account</Link></p></div>
-     
-      {/* Error message */}
-      {error && <span className={LoginCSS.error}>{error}</span>}
       </div>
-
+      <div className="red-column"></div> {/* Red column */}
     </div>
   );
 };

@@ -1,0 +1,1067 @@
+[
+    {
+        "stationName": "Ainola",
+        "stationShortCode": "AIN",
+        "stationUICCode": 628
+    },
+    {
+        "stationName": "Alavus",
+        "stationShortCode": "ALV",
+        "stationUICCode": 284
+    },
+    {
+        "stationName": "Aviapolis",
+        "stationShortCode": "AVP",
+        "stationUICCode": 1331
+    },
+    {
+        "stationName": "Dragsvik",
+        "stationShortCode": "DRA",
+        "stationUICCode": 167
+    },
+    {
+        "stationName": "El\u00e4inpuisto-Zoo",
+        "stationShortCode": "EPZ",
+        "stationUICCode": 623
+    },
+    {
+        "stationName": "Eno",
+        "stationShortCode": "ENO",
+        "stationUICCode": 464
+    },
+    {
+        "stationName": "Espoo",
+        "stationShortCode": "EPO",
+        "stationUICCode": 66
+    },
+    {
+        "stationName": "Haapaj\u00e4rvi",
+        "stationShortCode": "HPJ",
+        "stationUICCode": 330
+    },
+    {
+        "stationName": "Haapam\u00e4ki",
+        "stationShortCode": "HPK",
+        "stationUICCode": 200
+    },
+    {
+        "stationName": "Haarajoki",
+        "stationShortCode": "HAA",
+        "stationUICCode": 13
+    },
+    {
+        "stationName": "Haksi",
+        "stationShortCode": "HSI",
+        "stationUICCode": 1015
+    },
+    {
+        "stationName": "Hankasalmi",
+        "stationShortCode": "HKS",
+        "stationUICCode": 427
+    },
+    {
+        "stationName": "Hanko asema",
+        "stationShortCode": "HNK",
+        "stationUICCode": 73
+    },
+    {
+        "stationName": "Hanko-Pohjoinen",
+        "stationShortCode": "HKP",
+        "stationUICCode": 879
+    },
+    {
+        "stationName": "Harjavalta",
+        "stationShortCode": "HVA",
+        "stationUICCode": 218
+    },
+    {
+        "stationName": "Hein\u00e4vesi",
+        "stationShortCode": "HNV",
+        "stationUICCode": 437
+    },
+    {
+        "stationName": "Helsinki asema",
+        "stationShortCode": "HKI",
+        "stationUICCode": 1
+    },
+    {
+        "stationName": "Henna",
+        "stationShortCode": "HNN",
+        "stationUICCode": 1164
+    },
+    {
+        "stationName": "Herrala",
+        "stationShortCode": "HR",
+        "stationUICCode": 96
+    },
+    {
+        "stationName": "Hiekkaharju",
+        "stationShortCode": "HKH",
+        "stationUICCode": 556
+    },
+    {
+        "stationName": "Hiki\u00e4",
+        "stationShortCode": "HK",
+        "stationUICCode": 91
+    },
+    {
+        "stationName": "Hillosensalmi",
+        "stationShortCode": "HLS",
+        "stationUICCode": 988
+    },
+    {
+        "stationName": "Hinthaara",
+        "stationShortCode": "HH",
+        "stationUICCode": 561
+    },
+    {
+        "stationName": "Humppila",
+        "stationShortCode": "HP",
+        "stationUICCode": 144
+    },
+    {
+        "stationName": "Huopalahti",
+        "stationShortCode": "HPL",
+        "stationUICCode": 72
+    },
+    {
+        "stationName": "Hyvink\u00e4\u00e4 asema",
+        "stationShortCode": "HY",
+        "stationUICCode": 30
+    },
+    {
+        "stationName": "H\u00e4meenlinna",
+        "stationShortCode": "HL",
+        "stationUICCode": 47
+    },
+    {
+        "stationName": "H\u00e4rm\u00e4",
+        "stationShortCode": "HM",
+        "stationUICCode": 300
+    },
+    {
+        "stationName": "H\u00f6lj\u00e4kk\u00e4",
+        "stationShortCode": "H\u00d6L",
+        "stationUICCode": 938
+    },
+    {
+        "stationName": "Iisalmi",
+        "stationShortCode": "ILM",
+        "stationUICCode": 420
+    },
+    {
+        "stationName": "Iittala",
+        "stationShortCode": "ITA",
+        "stationUICCode": 154
+    },
+    {
+        "stationName": "Ilmala asema",
+        "stationShortCode": "ILA",
+        "stationUICCode": 9
+    },
+    {
+        "stationName": "Imatra asema",
+        "stationShortCode": "IMR",
+        "stationUICCode": 603
+    },
+    {
+        "stationName": "Inkeroinen",
+        "stationShortCode": "IKR",
+        "stationUICCode": 530
+    },
+    {
+        "stationName": "Inkoo",
+        "stationShortCode": "IKO",
+        "stationUICCode": 62
+    },
+    {
+        "stationName": "Isokyr\u00f6",
+        "stationShortCode": "IKY",
+        "stationUICCode": 295
+    },
+    {
+        "stationName": "Joensuu asema",
+        "stationShortCode": "JNS",
+        "stationUICCode": 460
+    },
+    {
+        "stationName": "Jokela",
+        "stationShortCode": "JK",
+        "stationUICCode": 28
+    },
+    {
+        "stationName": "Jorvas",
+        "stationShortCode": "JRS",
+        "stationUICCode": 578
+    },
+    {
+        "stationName": "Joutseno",
+        "stationShortCode": "JTS",
+        "stationUICCode": 499
+    },
+    {
+        "stationName": "Juupajoki",
+        "stationShortCode": "JJ",
+        "stationUICCode": 627
+    },
+    {
+        "stationName": "Jyv\u00e4skyl\u00e4",
+        "stationShortCode": "JY",
+        "stationUICCode": 240
+    },
+    {
+        "stationName": "J\u00e4ms\u00e4",
+        "stationShortCode": "J\u00c4S",
+        "stationUICCode": 204
+    },
+    {
+        "stationName": "J\u00e4rvel\u00e4",
+        "stationShortCode": "JR",
+        "stationUICCode": 95
+    },
+    {
+        "stationName": "J\u00e4rvenp\u00e4\u00e4 asema",
+        "stationShortCode": "JP",
+        "stationUICCode": 25
+    },
+    {
+        "stationName": "Kajaani",
+        "stationShortCode": "KAJ",
+        "stationUICCode": 387
+    },
+    {
+        "stationName": "Kannelm\u00e4ki",
+        "stationShortCode": "KAN",
+        "stationUICCode": 658
+    },
+    {
+        "stationName": "Kannus",
+        "stationShortCode": "KNS",
+        "stationUICCode": 317
+    },
+    {
+        "stationName": "Karjaa",
+        "stationShortCode": "KR",
+        "stationUICCode": 60
+    },
+    {
+        "stationName": "Karkku",
+        "stationShortCode": "KRU",
+        "stationUICCode": 178
+    },
+    {
+        "stationName": "Kauhava",
+        "stationShortCode": "KHA",
+        "stationUICCode": 299
+    },
+    {
+        "stationName": "Kauklahti asema",
+        "stationShortCode": "KLH",
+        "stationUICCode": 65
+    },
+    {
+        "stationName": "Kauniainen",
+        "stationShortCode": "KNI",
+        "stationUICCode": 67
+    },
+    {
+        "stationName": "Kausala",
+        "stationShortCode": "KA",
+        "stationUICCode": 477
+    },
+    {
+        "stationName": "Kemi asema",
+        "stationShortCode": "KEM",
+        "stationUICCode": 347
+    },
+    {
+        "stationName": "Kemij\u00e4rvi",
+        "stationShortCode": "KJ\u00c4",
+        "stationUICCode": 367
+    },
+    {
+        "stationName": "Kempele",
+        "stationShortCode": "KML",
+        "stationUICCode": 769
+    },
+    {
+        "stationName": "Kera",
+        "stationShortCode": "KEA",
+        "stationUICCode": 621
+    },
+    {
+        "stationName": "Kerava asema",
+        "stationShortCode": "KE",
+        "stationUICCode": 20
+    },
+    {
+        "stationName": "Kerim\u00e4ki",
+        "stationShortCode": "KI\u00c4",
+        "stationUICCode": 522
+    },
+    {
+        "stationName": "Kes\u00e4lahti",
+        "stationShortCode": "KTI",
+        "stationUICCode": 966
+    },
+    {
+        "stationName": "Keuruu",
+        "stationShortCode": "KEU",
+        "stationUICCode": 235
+    },
+    {
+        "stationName": "Kiiala",
+        "stationShortCode": "KIA",
+        "stationUICCode": 1113
+    },
+    {
+        "stationName": "Kilo",
+        "stationShortCode": "KIL",
+        "stationUICCode": 580
+    },
+    {
+        "stationName": "Kirkkonummi",
+        "stationShortCode": "KKN",
+        "stationUICCode": 63
+    },
+    {
+        "stationName": "Kitee",
+        "stationShortCode": "KIT",
+        "stationUICCode": 453
+    },
+    {
+        "stationName": "Kiuruvesi",
+        "stationShortCode": "KRV",
+        "stationUICCode": 417
+    },
+    {
+        "stationName": "Kivist\u00f6",
+        "stationShortCode": "KT\u00d6",
+        "stationUICCode": 1330
+    },
+    {
+        "stationName": "Kohtavaara",
+        "stationShortCode": "KOH",
+        "stationUICCode": 848
+    },
+    {
+        "stationName": "Koivuhovi",
+        "stationShortCode": "KVH",
+        "stationUICCode": 675
+    },
+    {
+        "stationName": "Koivukyl\u00e4",
+        "stationShortCode": "KVY",
+        "stationUICCode": 559
+    },
+    {
+        "stationName": "Kokem\u00e4ki",
+        "stationShortCode": "KKI",
+        "stationUICCode": 170
+    },
+    {
+        "stationName": "Kokkola",
+        "stationShortCode": "KOK",
+        "stationUICCode": 312
+    },
+    {
+        "stationName": "Kolari",
+        "stationShortCode": "KLI",
+        "stationUICCode": 358
+    },
+    {
+        "stationName": "Kolho",
+        "stationShortCode": "KLO",
+        "stationUICCode": 199
+    },
+    {
+        "stationName": "Kontiom\u00e4ki",
+        "stationShortCode": "KON",
+        "stationUICCode": 390
+    },
+    {
+        "stationName": "Koria",
+        "stationShortCode": "KRA",
+        "stationUICCode": 478
+    },
+    {
+        "stationName": "Korso",
+        "stationShortCode": "KRS",
+        "stationUICCode": 19
+    },
+    {
+        "stationName": "Kotka asema",
+        "stationShortCode": "KTA",
+        "stationUICCode": 532
+    },
+    {
+        "stationName": "Kotkan satama",
+        "stationShortCode": "KTS",
+        "stationUICCode": 644
+    },
+    {
+        "stationName": "Kouvola asema",
+        "stationShortCode": "KV",
+        "stationUICCode": 480
+    },
+    {
+        "stationName": "Kuopio asema",
+        "stationShortCode": "KUO",
+        "stationUICCode": 408
+    },
+    {
+        "stationName": "Kupittaa",
+        "stationShortCode": "KUT",
+        "stationUICCode": 126
+    },
+    {
+        "stationName": "Kyl\u00e4nlahti",
+        "stationShortCode": "KYN",
+        "stationUICCode": 937
+    },
+    {
+        "stationName": "Kymi",
+        "stationShortCode": "KY",
+        "stationUICCode": 534
+    },
+    {
+        "stationName": "Kyminlinna",
+        "stationShortCode": "KLN",
+        "stationUICCode": 981
+    },
+    {
+        "stationName": "K\u00e4pyl\u00e4",
+        "stationShortCode": "K\u00c4P",
+        "stationUICCode": 977
+    },
+    {
+        "stationName": "Lahti",
+        "stationShortCode": "LH",
+        "stationUICCode": 100
+    },
+    {
+        "stationName": "Laihia",
+        "stationShortCode": "LAI",
+        "stationUICCode": 293
+    },
+    {
+        "stationName": "Lapinlahti",
+        "stationShortCode": "LNA",
+        "stationUICCode": 416
+    },
+    {
+        "stationName": "Lappeenranta",
+        "stationShortCode": "LR",
+        "stationUICCode": 495
+    },
+    {
+        "stationName": "Lappila",
+        "stationShortCode": "LAA",
+        "stationUICCode": 94
+    },
+    {
+        "stationName": "Lappohja",
+        "stationShortCode": "LPO",
+        "stationUICCode": 75
+    },
+    {
+        "stationName": "Lapua",
+        "stationShortCode": "LPA",
+        "stationUICCode": 298
+    },
+    {
+        "stationName": "Leinel\u00e4",
+        "stationShortCode": "LN\u00c4",
+        "stationUICCode": 1333
+    },
+    {
+        "stationName": "Lemp\u00e4\u00e4l\u00e4",
+        "stationShortCode": "LP\u00c4",
+        "stationUICCode": 156
+    },
+    {
+        "stationName": "Lentoasema",
+        "stationShortCode": "LEN",
+        "stationUICCode": 1332
+    },
+    {
+        "stationName": "Lepp\u00e4vaara",
+        "stationShortCode": "LPV",
+        "stationUICCode": 68
+    },
+    {
+        "stationName": "Lieksa",
+        "stationShortCode": "LIS",
+        "stationUICCode": 468
+    },
+    {
+        "stationName": "Lievestuore",
+        "stationShortCode": "LVT",
+        "stationUICCode": 246
+    },
+    {
+        "stationName": "Loimaa",
+        "stationShortCode": "LM",
+        "stationUICCode": 142
+    },
+    {
+        "stationName": "Louhela",
+        "stationShortCode": "LOH",
+        "stationUICCode": 661
+    },
+    {
+        "stationName": "Lusto",
+        "stationShortCode": "LUS",
+        "stationUICCode": 690
+    },
+    {
+        "stationName": "Malmi",
+        "stationShortCode": "ML",
+        "stationUICCode": 17
+    },
+    {
+        "stationName": "Malminkartano",
+        "stationShortCode": "MLO",
+        "stationUICCode": 659
+    },
+    {
+        "stationName": "Martinlaakso",
+        "stationShortCode": "MRL",
+        "stationUICCode": 662
+    },
+    {
+        "stationName": "Masala",
+        "stationShortCode": "MAS",
+        "stationUICCode": 64
+    },
+    {
+        "stationName": "Mikkeli",
+        "stationShortCode": "MI",
+        "stationUICCode": 546
+    },
+    {
+        "stationName": "Misi",
+        "stationShortCode": "MIS",
+        "stationUICCode": 366
+    },
+    {
+        "stationName": "Mommila",
+        "stationShortCode": "MLA",
+        "stationUICCode": 93
+    },
+    {
+        "stationName": "Moskova_(Leningradski)",
+        "stationShortCode": "MVA",
+        "stationUICCode": 6007
+    },
+    {
+        "stationName": "Muhos",
+        "stationShortCode": "MH",
+        "stationUICCode": 375
+    },
+    {
+        "stationName": "Muurola",
+        "stationShortCode": "MUL",
+        "stationUICCode": 363
+    },
+    {
+        "stationName": "Myllykoski",
+        "stationShortCode": "MKI",
+        "stationUICCode": 536
+    },
+    {
+        "stationName": "Myllym\u00e4ki",
+        "stationShortCode": "MY",
+        "stationUICCode": 263
+    },
+    {
+        "stationName": "Myyrm\u00e4ki",
+        "stationShortCode": "MYR",
+        "stationUICCode": 660
+    },
+    {
+        "stationName": "M\u00e4kkyl\u00e4",
+        "stationShortCode": "M\u00c4K",
+        "stationUICCode": 693
+    },
+    {
+        "stationName": "M\u00e4nts\u00e4l\u00e4",
+        "stationShortCode": "ML\u00c4",
+        "stationUICCode": 27
+    },
+    {
+        "stationName": "M\u00e4ntyharju",
+        "stationShortCode": "MR",
+        "stationUICCode": 544
+    },
+    {
+        "stationName": "Nastola",
+        "stationShortCode": "NSL",
+        "stationUICCode": 595
+    },
+    {
+        "stationName": "Nikkil\u00e4",
+        "stationShortCode": "NL\u00c4",
+        "stationUICCode": 22
+    },
+    {
+        "stationName": "Nivala",
+        "stationShortCode": "NVL",
+        "stationUICCode": 328
+    },
+    {
+        "stationName": "Nokia",
+        "stationShortCode": "NOA",
+        "stationUICCode": 181
+    },
+    {
+        "stationName": "Nurmes",
+        "stationShortCode": "NRM",
+        "stationUICCode": 472
+    },
+    {
+        "stationName": "Oitti",
+        "stationShortCode": "OI",
+        "stationUICCode": 92
+    },
+    {
+        "stationName": "Orivesi",
+        "stationShortCode": "OV",
+        "stationUICCode": 190
+    },
+    {
+        "stationName": "Orivesi keskusta",
+        "stationShortCode": "OVK",
+        "stationUICCode": 1316
+    },
+    {
+        "stationName": "Oulainen",
+        "stationShortCode": "OU",
+        "stationUICCode": 322
+    },
+    {
+        "stationName": "Oulu asema",
+        "stationShortCode": "OL",
+        "stationUICCode": 370
+    },
+    {
+        "stationName": "Oulunkyl\u00e4",
+        "stationShortCode": "OLK",
+        "stationUICCode": 15
+    },
+    {
+        "stationName": "Paimenportti",
+        "stationShortCode": "PTI",
+        "stationUICCode": 768
+    },
+    {
+        "stationName": "Paltamo",
+        "stationShortCode": "PTO",
+        "stationUICCode": 379
+    },
+    {
+        "stationName": "Parikkala",
+        "stationShortCode": "PAR",
+        "stationUICCode": 510
+    },
+    {
+        "stationName": "Parkano",
+        "stationShortCode": "PKO",
+        "stationUICCode": 215
+    },
+    {
+        "stationName": "Parola",
+        "stationShortCode": "PRL",
+        "stationUICCode": 49
+    },
+    {
+        "stationName": "Pasila asema",
+        "stationShortCode": "PSL",
+        "stationUICCode": 10
+    },
+    {
+        "stationName": "Pasila autojuna-asema",
+        "stationShortCode": "PAU",
+        "stationUICCode": 1328
+    },
+    {
+        "stationName": "Pello",
+        "stationShortCode": "PEL",
+        "stationUICCode": 356
+    },
+    {
+        "stationName": "Pet\u00e4j\u00e4vesi",
+        "stationShortCode": "PVI",
+        "stationUICCode": 237
+    },
+    {
+        "stationName": "Pieks\u00e4m\u00e4ki asema",
+        "stationShortCode": "PM",
+        "stationUICCode": 400
+    },
+    {
+        "stationName": "Pietari_(Finljandski)",
+        "stationShortCode": "PTR",
+        "stationUICCode": 3820
+    },
+    {
+        "stationName": "Pietari_(Ladozhski)",
+        "stationShortCode": "PTL",
+        "stationUICCode": 3181
+    },
+    {
+        "stationName": "Pihlajavesi",
+        "stationShortCode": "PH",
+        "stationUICCode": 261
+    },
+    {
+        "stationName": "Pit\u00e4j\u00e4nm\u00e4ki",
+        "stationShortCode": "PJM",
+        "stationUICCode": 69
+    },
+    {
+        "stationName": "Pohjois-Haaga",
+        "stationShortCode": "POH",
+        "stationUICCode": 657
+    },
+    {
+        "stationName": "Pori",
+        "stationShortCode": "PRI",
+        "stationUICCode": 220
+    },
+    {
+        "stationName": "Porvoo",
+        "stationShortCode": "PRV",
+        "stationUICCode": 23
+    },
+    {
+        "stationName": "Puistola",
+        "stationShortCode": "PLA",
+        "stationUICCode": 553
+    },
+    {
+        "stationName": "Pukinm\u00e4ki",
+        "stationShortCode": "PMK",
+        "stationUICCode": 551
+    },
+    {
+        "stationName": "Punkaharju",
+        "stationShortCode": "PUN",
+        "stationUICCode": 517
+    },
+    {
+        "stationName": "Purola",
+        "stationShortCode": "PUR",
+        "stationUICCode": 564
+    },
+    {
+        "stationName": "Pyh\u00e4salmi",
+        "stationShortCode": "PH\u00c4",
+        "stationUICCode": 331
+    },
+    {
+        "stationName": "P\u00e4nn\u00e4inen",
+        "stationShortCode": "PN\u00c4",
+        "stationUICCode": 305
+    },
+    {
+        "stationName": "P\u00e4\u00e4skylahti",
+        "stationShortCode": "PKY",
+        "stationUICCode": 519
+    },
+    {
+        "stationName": "Rekola",
+        "stationShortCode": "RKL",
+        "stationUICCode": 554
+    },
+    {
+        "stationName": "Retretti",
+        "stationShortCode": "REE",
+        "stationUICCode": 793
+    },
+    {
+        "stationName": "Riihim\u00e4ki asema",
+        "stationShortCode": "RI",
+        "stationUICCode": 40
+    },
+    {
+        "stationName": "Rovaniemi",
+        "stationShortCode": "ROI",
+        "stationUICCode": 364
+    },
+    {
+        "stationName": "Runni",
+        "stationShortCode": "RNN",
+        "stationUICCode": 886
+    },
+    {
+        "stationName": "Ruukki",
+        "stationShortCode": "RKI",
+        "stationUICCode": 337
+    },
+    {
+        "stationName": "Ryttyl\u00e4",
+        "stationShortCode": "RY",
+        "stationUICCode": 42
+    },
+    {
+        "stationName": "Salo",
+        "stationShortCode": "SLO",
+        "stationUICCode": 55
+    },
+    {
+        "stationName": "Santala",
+        "stationShortCode": "STA",
+        "stationUICCode": 827
+    },
+    {
+        "stationName": "Saunakallio",
+        "stationShortCode": "SAU",
+        "stationUICCode": 806
+    },
+    {
+        "stationName": "Savio",
+        "stationShortCode": "SAV",
+        "stationUICCode": 555
+    },
+    {
+        "stationName": "Savonlinna asema",
+        "stationShortCode": "SL",
+        "stationUICCode": 521
+    },
+    {
+        "stationName": "Sein\u00e4joki asema",
+        "stationShortCode": "SK",
+        "stationUICCode": 280
+    },
+    {
+        "stationName": "Siilinj\u00e4rvi asema",
+        "stationShortCode": "SIJ",
+        "stationUICCode": 413
+    },
+    {
+        "stationName": "Simpele",
+        "stationShortCode": "SPL",
+        "stationUICCode": 507
+    },
+    {
+        "stationName": "Siuntio",
+        "stationShortCode": "STI",
+        "stationUICCode": 576
+    },
+    {
+        "stationName": "Skogby",
+        "stationShortCode": "SGY",
+        "stationUICCode": 817
+    },
+    {
+        "stationName": "Sukeva",
+        "stationShortCode": "SKV",
+        "stationUICCode": 424
+    },
+    {
+        "stationName": "Suonenjoki",
+        "stationShortCode": "SNJ",
+        "stationUICCode": 404
+    },
+    {
+        "stationName": "Tammisaari",
+        "stationShortCode": "TMS",
+        "stationUICCode": 76
+    },
+    {
+        "stationName": "Tampere asema",
+        "stationShortCode": "TPE",
+        "stationUICCode": 160
+    },
+    {
+        "stationName": "Tapanila",
+        "stationShortCode": "TNA",
+        "stationUICCode": 552
+    },
+    {
+        "stationName": "Tavastila",
+        "stationShortCode": "TSL",
+        "stationUICCode": 837
+    },
+    {
+        "stationName": "Tervajoki",
+        "stationShortCode": "TK",
+        "stationUICCode": 294
+    },
+    {
+        "stationName": "Tervola",
+        "stationShortCode": "TRV",
+        "stationUICCode": 361
+    },
+    {
+        "stationName": "Tesoma",
+        "stationShortCode": "TSO",
+        "stationUICCode": 1359
+    },
+    {
+        "stationName": "Tikkurila asema",
+        "stationShortCode": "TKL",
+        "stationUICCode": 18
+    },
+    {
+        "stationName": "Toijala",
+        "stationShortCode": "TL",
+        "stationUICCode": 150
+    },
+    {
+        "stationName": "Tolsa",
+        "stationShortCode": "TOL",
+        "stationUICCode": 830
+    },
+    {
+        "stationName": "Tornio-It\u00e4inen",
+        "stationShortCode": "TRI",
+        "stationUICCode": 1318
+    },
+    {
+        "stationName": "Tuomarila",
+        "stationShortCode": "TRL",
+        "stationUICCode": 579
+    },
+    {
+        "stationName": "Turenki",
+        "stationShortCode": "TU",
+        "stationUICCode": 44
+    },
+    {
+        "stationName": "Turku asema",
+        "stationShortCode": "TKU",
+        "stationUICCode": 130
+    },
+    {
+        "stationName": "Turku satama",
+        "stationShortCode": "TUS",
+        "stationUICCode": 135
+    },
+    {
+        "stationName": "Tuuri",
+        "stationShortCode": "TUU",
+        "stationUICCode": 283
+    },
+    {
+        "stationName": "Tver",
+        "stationShortCode": "TVE",
+        "stationUICCode": 9999
+    },
+    {
+        "stationName": "Uimaharju",
+        "stationShortCode": "UIM",
+        "stationUICCode": 465
+    },
+    {
+        "stationName": "Utaj\u00e4rvi",
+        "stationShortCode": "UTJ",
+        "stationUICCode": 376
+    },
+    {
+        "stationName": "Uusikyl\u00e4",
+        "stationShortCode": "UK\u00c4",
+        "stationUICCode": 105
+    },
+    {
+        "stationName": "Vaala",
+        "stationShortCode": "VAA",
+        "stationUICCode": 377
+    },
+    {
+        "stationName": "Vaasa",
+        "stationShortCode": "VS",
+        "stationUICCode": 288
+    },
+    {
+        "stationName": "Vainikkala asema",
+        "stationShortCode": "VNA",
+        "stationUICCode": 492
+    },
+    {
+        "stationName": "Valimo",
+        "stationShortCode": "VMO",
+        "stationUICCode": 847
+    },
+    {
+        "stationName": "Vammala",
+        "stationShortCode": "VMA",
+        "stationUICCode": 176
+    },
+    {
+        "stationName": "Vantaankoski",
+        "stationShortCode": "VKS",
+        "stationUICCode": 839
+    },
+    {
+        "stationName": "Varkaus",
+        "stationShortCode": "VAR",
+        "stationUICCode": 432
+    },
+    {
+        "stationName": "Vehkala",
+        "stationShortCode": "VEH",
+        "stationUICCode": 1337
+    },
+    {
+        "stationName": "Vihanti",
+        "stationShortCode": "VTI",
+        "stationUICCode": 334
+    },
+    {
+        "stationName": "Vihtari",
+        "stationShortCode": "VIH",
+        "stationUICCode": 438
+    },
+    {
+        "stationName": "Viiala",
+        "stationShortCode": "VIA",
+        "stationUICCode": 155
+    },
+    {
+        "stationName": "Viinij\u00e4rvi",
+        "stationShortCode": "VNJ",
+        "stationUICCode": 440
+    },
+    {
+        "stationName": "Viipuri",
+        "stationShortCode": "VYB",
+        "stationUICCode": 2000
+    },
+    {
+        "stationName": "Vill\u00e4hde",
+        "stationShortCode": "VLH",
+        "stationUICCode": 104
+    },
+    {
+        "stationName": "Vilppula",
+        "stationShortCode": "VLP",
+        "stationUICCode": 196
+    },
+    {
+        "stationName": "Vuonislahti",
+        "stationShortCode": "VSL",
+        "stationUICCode": 467
+    },
+    {
+        "stationName": "Ylistaro",
+        "stationShortCode": "YST",
+        "stationUICCode": 296
+    },
+    {
+        "stationName": "Ylitornio",
+        "stationShortCode": "YTR",
+        "stationUICCode": 789
+    },
+    {
+        "stationName": "Ylivieska",
+        "stationShortCode": "YV",
+        "stationUICCode": 320
+    },
+    {
+        "stationName": "\u00c4ht\u00e4ri",
+        "stationShortCode": "\u00c4HT",
+        "stationUICCode": 265
+    }
+]
