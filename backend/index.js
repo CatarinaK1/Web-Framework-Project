@@ -96,3 +96,73 @@ app.post("/register", async (req, res) => {
   }
 });
 
+// usernamechange route
+app.post("/newusername", async (req, res) => {
+    try {
+        const { username, newusername, email, password } = req.body;
+
+        // Find account with the given username
+        const account = await Account.findOne({ username });
+      
+        // Check if account exists
+        if (!account) {
+            return res.status(404).json({ message: "Account not found" });
+        }
+
+        // Compare passwords and email
+        if (password !== account.password || email !== account.email) {
+            console.log("Passwords or email do not match");
+            return res.status(401).json({ message: "Invalid email or password" });
+        }
+
+        // Check if the new username already exists
+        const existingAccount = await Account.findOne({ username: newusername });
+        if (existingAccount) {
+            return res.status(400).json({ message: "Username already exists" });
+        }
+
+        // Update the username
+        account.username = newusername;
+        await account.save();
+
+        console.log("Username changed successfully");
+        res.status(200).json({ message: "Username changed successfully" });
+
+    } catch (error) {
+        console.error("Error during username change:", error);
+        res.status(500).json({ error: "Internal server error" });
+    }
+});
+
+// password change route
+app.post("/newpassword", async (req, res) => {
+    try {
+        const { username, email, password, newpassword} = req.body;
+
+        // Find account with the given username
+        const account = await Account.findOne({ username });
+      
+        // Check if account exists
+        if (!account) {
+            return res.status(404).json({ message: "Account not found" });
+        }
+        console.log(password + " " + email)
+        // Compare passwords and email
+        if (password !== account.password || email !== account.email) {
+            console.log("Passwords or email do not match");
+            return res.status(401).json({ message: "Invalid email or password" });
+        }
+
+        // Update the password
+        account.password = newpassword;
+        await account.save();
+
+        console.log("Password changed successfully");
+        res.status(200).json({ message: "Password changed successfully" });
+
+    } catch (error) {
+        console.error("Error while changing password:", error);
+        res.status(500).json({ error: "Internal server error" });
+    }
+});
+
