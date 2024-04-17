@@ -5,6 +5,9 @@ const connectToDB = require("./dbconnect");
 require("dotenv").config(); // Loads environment variables from a .env file
 const { MongoClient, ServerApiVersion } = require('mongodb');
 // import URI from "./env.local.js"
+const jwt = require('jsonwebtoken');
+
+
 
 app.use(cors());
 app.use(express.json());
@@ -23,10 +26,14 @@ connectToDB()
 // Account module
 const Account = require("./models/Account");
 
+
+
 //Login route
 app.post("/login", async (req, res) => {
   try {
       const { username, password } = req.body;
+      const user = {name: username};
+
       console.log(username);
       // Find account with the given username
       const account = await Account.findOne({ username });
@@ -39,7 +46,16 @@ app.post("/login", async (req, res) => {
       // Compare passwords
       if (password === account.password) {
           console.log("Passwords match");
-          res.status(200).json({ message: "Login successful" });
+
+          // Authentication
+          // save secret access token related to the user
+          const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET);
+    
+
+            // Return message and access token
+          res.status(200).json({ message: "Login successful" , accessToken: accessToken});
+
+
       } else {
           console.log("Passwords do not match");
           res.status(401).json({ message: "Invalid username or password" });
@@ -50,6 +66,39 @@ app.post("/login", async (req, res) => {
       res.status(500).json({ error: "Internal server error" });
   }
 });
+
+
+// Middleware
+function authenticateToken(req,res, next){
+    
+    const authHeader = req.headers['authorization'];
+
+    // if we have and authHeader then return the token portion
+    const token = authHeader && authHeader.split(' ')[1];
+    console.log(token);
+    console.log(authHeader);
+
+    // Check if token is null
+    if (token == null) return res.sendStatus(401);
+
+    // Verify the token
+    jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+    // Check for token verification error
+    if (err) {
+      return res.status(403).json({ error: 'Invalid token' });
+    }
+
+    // Token is valid, attach user data to the request object
+    req.user = user;
+
+    // Proceed to the next middleware or route handler
+    next();
+    });
+
+}
+
+
+
 
 //Register route route
 app.post("/signup", async (req, res) => {
