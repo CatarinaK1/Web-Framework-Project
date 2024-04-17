@@ -21,8 +21,8 @@ const SignUpForm = () => {
       },
       body: JSON.stringify({username, email, password})
     })
-    // .then ((r) => r.json())
-    // .then ((r) => console.log(r))
+ 
+
     .then((response) => {
       if (!response.ok) {
         throw new Error('Registration failed');
@@ -30,6 +30,7 @@ const SignUpForm = () => {
       return response.json();
     })
     .then((data) => {
+      
       console.log(data); // Handle successful login response
 
     })

@@ -10,6 +10,24 @@ import 'react-datepicker/dist/react-datepicker.css';
 const Home = () => {
   // Calendar
   const [startDate, setStartDate] = useState(new Date());
+  const [departure, setDeparture] = useState('');
+  const [destination, setDestination] = useState('');
+  
+
+  
+  async function saveFavorite(){
+    const token = localStorage.getItem('accessToken');
+    const response = await fetch('http://localhost:3080/savefavorite', {
+
+      method: 'POST',
+      headers: {
+       'authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ departure, destination })
+    })
+  };
+
   return (
 
 
@@ -33,12 +51,12 @@ const Home = () => {
         <div className="col">
           {/* Departure input */}
         <h3>Departure <IoLocationSharp className={HomeCSS.LocationIcon}/></h3>
-          <input type="text" className="form-control" placeholder="From" />
+          <input type="text" onChange={(e) =>setDeparture(e.target.value)} className="form-control" placeholder="From" />
         </div>
         <div className="col">
           {/* Destination input */}
           <h3>Destination <IoLocationSharp className={HomeCSS.LocationIcon}/></h3>
-          <input type="text" className="form-control" placeholder="To" />
+          <input type="text" onChange={(e) =>setDestination(e.target.value)} className="form-control" placeholder="To" />
         </div>
         <div className="col">
           {/* Date input */}
@@ -54,6 +72,7 @@ const Home = () => {
           <div className="col">
           <button type="submit" className={HomeCSS.TrainFormButton}>Search</button>
           </div>
+          <button onClick={saveFavorite} className={HomeCSS.TrainFormButton}>Save</button>
       </div>
     </div>
   </form>

@@ -1,5 +1,5 @@
 import './App.css';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import TrainNavbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,18 +13,34 @@ import SignUpPage from './components/SignUp/signup';
 
 
 const App = () => {
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    // Check if user is logged in (e.g., by checking token in local storage)
+    const token = localStorage.getItem('accessToken');
+    setIsLoggedIn(!!token);
+  }, []);
+
+  let log = "inactive"
+  if (isLoggedIn) log = "active"
+
+
   return (
     <>
       {/* <div> */}
       <TrainNavbar />
         <Routes>
 
+          
           <Route path="/" element={<><Home /><FavoriteDestination /><TrainSchedule /></>}/>
           <Route path="/login" element={<><LoginPage /></>}/>
           <Route path="/signup" element={<SignUpPage/>}/>
 
 
         </Routes>
+        {log}
+
       {/* </div> */}
       <Footer />
       </>
