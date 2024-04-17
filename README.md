@@ -48,6 +48,10 @@ JTW to create tokens and facilitate conditional rendering
 npm i jsonwebtoken
 ```
 
+```
+npm i cookie-parser
+```
+
 ### Frontend
 #### React  
 .  
