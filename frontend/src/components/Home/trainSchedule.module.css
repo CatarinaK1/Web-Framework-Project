@@ -77,6 +77,7 @@
 .trainSchedule {
   background-color: #f8f9fa; /* Background color for the train schedule section */
   padding: 20px; /* Add padding to the train schedule section */
+  border-radius: 20px;
 }
 
   

@@ -3,7 +3,8 @@
 // Tämä on funktio, joka hakee junien aikataulut
 export default async function searchTrains(Departure, Destination) {
     const listoftrains = await searchTrainsWithAPI(Departure, Destination);
-    console.log(Departure, Destination);
+    //console.log(Departure, Destination);
+    //console.log(listoftrains);
     return listoftrains;
 }
 
@@ -26,7 +27,7 @@ async function searchTrainsWithAPI(departureStationShortCode, arrivalStationShor
         }
         const data = await response.json();
         const trainObject = await trains(data, departureStationShortCode, arrivalStationShortCode);
-        console.log(trainObject);
+        //console.log(trainObject);
         return trainObject;
     } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
@@ -54,6 +55,7 @@ async function trains(data, departureStationShortCode, arrivalStationShortCode) 
                 return null; // or return {} as an empty object if you prefer
             }
         }));
+        //console.log(trainObject);
         return trainObject.filter(Boolean); // Filter out null values
     } catch (error) {
         console.error('There was a problem with processing the train data:', error);

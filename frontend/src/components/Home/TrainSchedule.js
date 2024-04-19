@@ -4,47 +4,81 @@ import { FaTrainSubway } from 'react-icons/fa6';
 import { BiCurrentLocation } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
 import searchTrains from './scheduleData'; // js for searching trains with api
-
-export const functionB = () => {
-  // Tässä voit tehdä mitä haluat funktion kutsun yhteydessä
-  console.log('Function B called!');
+//import home from './home';
+/*
+const updateSearch = async (from, to) => {
+  console.log(to);
+  let data = [];
+  if (from !== to) {
+    // jos from ja to eivät ole samoja. TrainSchedulessa Search1 saa from arvon ja Search2 to arvon tästä functiosta
+  console.log(to);
+  TrainSchedule();
+  }
 };
-const TrainSchedule = () => {
-    const [departureCity, setDepartureCity] = useState('Helsinki');
-    const [destinationCity, setDestinationCity] = useState('Tampere');
-    const [scheduleData, setScheduleData] = useState([]); // Lisää tila aikatauludatalle
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const data = await searchTrains("TPE", "HL"); // call searchTrains-function
-            setScheduleData(data);
-        };
+export { updateSearch };
+*/
+const TrainSchedule = ({ Search1 = 'TPE', Search2 = 'HL' }) => {
+  const [departureCity, setDepartureCity] = useState('Tampere');
+  const [destinationCity, setDestinationCity] = useState('Hämeenlinna');
+  const [scheduleData, setScheduleData] = useState([]);
 
-        fetchData(); //Call the fetchData function when the component is loaded
-    }, []); // An empty array means that useEffect is executed only once when the component is loaded
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await searchTrains(Search1, Search2);
+      setScheduleData(data);
+    };
 
-    
+    fetchData();
+  }, [Search1, Search2]);
+
+  useEffect(() => {
+    // Päivitä kaupunkitiedot aina, kun hakutiedot muuttuvat
+    setDepartureCity(Search1);
+    setDestinationCity(Search2);
+  }, [Search1, Search2]);
+
+  const renderScheduleRows = (scheduleData) => {
+    return scheduleData.map((item, index) => (
+      <div className={`row ${TrainCSS.scheduleRow}`} key={index}>
+        <div className="col">
+          <p>{item.Departurehour}</p>
+        </div>
+        <div className="col">
+          <p>{item.Arrivalhour}</p>
+        </div>
+        <div className="col">
+          <p>{item.train}</p>
+        </div>
+        <div className="col">
+          <p>{item.track}</p>
+        </div>
+      </div>
+    ));
+  };
+
+  const renderTrainSchedule = () => {
     return (
       <section className={TrainCSS.trainScheduleSection}>
         <div className="container">
           <div className="row">
             <div className="col-md-4">
               <div className={TrainCSS.TrainScheduleTitle}>
-                <FaTrainSubway className={TrainCSS.TrainScheduleTitleIcon}/>
+                <FaTrainSubway className={TrainCSS.TrainScheduleTitleIcon} />
                 <h2>Train Schedule</h2>
               </div>
               <div className={TrainCSS.DepartureDestinationContainer}>
                 <div className={TrainCSS.TrainDestinationDeparture}>
                   <p>Departure</p>
                   <div className={TrainCSS.CityandIcon}>
-                    <BiCurrentLocation className={TrainCSS.LocationIcon}/>
+                    <BiCurrentLocation className={TrainCSS.LocationIcon} />
                     <h3>{departureCity}</h3>
                   </div>
                 </div>
                 <div className={TrainCSS.TrainDestinationDeparture}>
-                  <p >Destination </p>
+                  <p>Destination </p>
                   <div className={TrainCSS.CityandIcon}>
-                    <FaLocationDot className={TrainCSS.LocationIconDestination}/>
+                    <FaLocationDot className={TrainCSS.LocationIconDestination} />
                     <h3>{destinationCity}</h3>
                   </div>
                 </div>
@@ -65,28 +99,17 @@ const TrainSchedule = () => {
                   <h3>Track</h3>
                 </div>
               </div>
-              {/* Render train schedule data */}
-              {scheduleData.map((item, index) => (
-                <div className={`row ${TrainCSS.scheduleRow}`} key={index}>
-                  <div className="col">
-                    <p>{item.Departurehour}</p>
-                  </div>
-                  <div className="col">
-                    <p>{item.Arrivalhour}</p>
-                  </div>
-                  <div className="col">
-                    <p>{item.train}</p>
-                  </div>
-                  <div className="col">
-                    <p>{item.track}</p>
-                  </div>
-                </div>
-              ))}
+              {renderScheduleRows(scheduleData)}
             </div>
           </div>
         </div>
       </section>
     );
+  };
+  if (!scheduleData) {
+    return <p>No trains were found for this route.</p>; // Näytä latausviesti, jos scheduleData ei ole vielä saatavilla
+  }
+  return renderTrainSchedule();
 };
 
 export default TrainSchedule;

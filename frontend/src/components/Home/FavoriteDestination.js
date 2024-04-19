@@ -5,6 +5,7 @@ import HelsinkiImage from '../../assets/Helsinki.jpg';
 import TurkuImage from '../../assets/Turku.jpg';
 import TampereImage from '../../assets/Tampere.jpg';
 import { MdLocationPin } from "react-icons/md";
+import home from './home';
 
 const FavoriteDestination = () => {
 
