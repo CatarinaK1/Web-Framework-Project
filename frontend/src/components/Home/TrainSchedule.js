@@ -4,39 +4,28 @@ import { FaTrainSubway } from 'react-icons/fa6';
 import { BiCurrentLocation } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
 import searchTrains from './scheduleData'; // js for searching trains with api
-//import home from './home';
-/*
-const updateSearch = async (from, to) => {
-  console.log(to);
-  let data = [];
-  if (from !== to) {
-    // jos from ja to eivät ole samoja. TrainSchedulessa Search1 saa from arvon ja Search2 to arvon tästä functiosta
-  console.log(to);
-  TrainSchedule();
-  }
-};
 
-export { updateSearch };
-*/
-const TrainSchedule = ({ Search1 = 'TPE', Search2 = 'HL' }) => {
+
+const TrainSchedule = ({ Search1 = 'TPE', Search2 = 'HL' , isoString = ''}) => {
   const [departureCity, setDepartureCity] = useState('Tampere');
   const [destinationCity, setDestinationCity] = useState('Hämeenlinna');
   const [scheduleData, setScheduleData] = useState([]);
-
+  //console.log("sascömöckaölkckmamcökaofeadsad");
+  //console.log(isoString);
   useEffect(() => {
     const fetchData = async () => {
-      const data = await searchTrains(Search1, Search2);
+      const data = await searchTrains(Search1, Search2, isoString);
       setScheduleData(data);
     };
 
     fetchData();
-  }, [Search1, Search2]);
+  }, [Search1, Search2, isoString]);
 
   useEffect(() => {
     // Päivitä kaupunkitiedot aina, kun hakutiedot muuttuvat
     setDepartureCity(Search1);
     setDestinationCity(Search2);
-  }, [Search1, Search2]);
+  }, [Search1, Search2, isoString]);
 
   const renderScheduleRows = (scheduleData) => {
     return scheduleData.map((item, index) => (

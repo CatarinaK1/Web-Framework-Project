@@ -1,23 +1,24 @@
 // scheduleData.js
 
 // Tämä on funktio, joka hakee junien aikataulut
-export default async function searchTrains(Departure, Destination) {
-    const listoftrains = await searchTrainsWithAPI(Departure, Destination);
+export default async function searchTrains(Departure, Destination, isoDate) {
+    const listoftrains = await searchTrainsWithAPI(Departure, Destination, isoDate);
     //console.log(Departure, Destination);
     //console.log(listoftrains);
     return listoftrains;
 }
 
-async function searchTrainsWithAPI(departureStationShortCode, arrivalStationShortCode) {
+async function searchTrainsWithAPI(departureStationShortCode, arrivalStationShortCode, isoDate) {
     // Haetaan junien aikataulut API:sta
+    /*
     const formattedDate = (date) => {
         const dateWithCorrectOffset = new Date();
         return dateWithCorrectOffset.toISOString();
     };
-
+    
     const currentDate = new Date();
     const isoDate = formattedDate(currentDate);
-
+    */
     const apiUrl = 'https://rata.digitraffic.fi/api/v1/live-trains/station/' + departureStationShortCode + '/' + arrivalStationShortCode + '?startDate=' + isoDate + '&limit=15';
 
     try {
