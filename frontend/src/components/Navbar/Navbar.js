@@ -5,15 +5,20 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+// import { updateUsername } from '../../utils';
+
+
 
 function TrainNavbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState('');
+  // const [username, setUsername] = useState('');
 
   useEffect(() => {
     // Check if the user is logged in by fetching the access token from local storage
     const accessToken = localStorage.getItem('accessToken');
     setIsLoggedIn(!!accessToken); // Convert to boolean
+    //setUsername(localStorage.getItem('user'));
     setUser(localStorage.getItem('user'));
   }, []);
 
@@ -27,6 +32,7 @@ function TrainNavbar() {
     // You can use react-router-dom for navigation
     // Example: history.push('/login') or window.location.href = '/login';
   };
+
 
 
 
@@ -45,6 +51,10 @@ function TrainNavbar() {
               <>
                 <Nav.Link>Welcome, {user}</Nav.Link>
                 <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
+                <Nav.Link href="/usersettings">Settings</Nav.Link>
+
+
+
               </>
             ) : (
               <Nav.Link href="/login">Sign in</Nav.Link>

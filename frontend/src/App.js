@@ -9,6 +9,7 @@ import TrainSchedule from './components/Home/TrainSchedule';
 import {Route, Routes} from "react-router-dom";
 import LoginPage from './components/Login/login';
 import SignUpPage from './components/SignUp/signup';
+import UserSettings from './components/UserSettings/UserSettings';
 
 
 
@@ -22,8 +23,8 @@ const App = () => {
     setIsLoggedIn(!!token);
   }, []);
 
-  let log = "inactive"
-  if (isLoggedIn) log = "active"
+ /* let log = "inactive"
+  if (isLoggedIn) log = "active"*/
 
 
   return (
@@ -34,12 +35,14 @@ const App = () => {
 
           
           <Route path="/" element={<><Home /><FavoriteDestination /><TrainSchedule /></>}/>
+
+          {isLoggedIn && <Route path="/usersettings" element={<UserSettings />} />}
           <Route path="/login" element={<><LoginPage /></>}/>
           <Route path="/signup" element={<SignUpPage/>}/>
 
 
         </Routes>
-        {log}
+        {/* {log} */}
 
       {/* </div> */}
       <Footer />

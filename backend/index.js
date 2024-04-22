@@ -169,10 +169,15 @@ const createToken = (id) =>{
 // usernamechange route
 app.post("/newusername", async (req, res) => {
     try {
-        const { username, newusername, email, password } = req.body;
+        const { username, newUsername, email, password } = req.body;
+        console.log(req.body);
+        console.log(username, newUsername, email, password);
+
 
         // Find account with the given username
         const account = await Account.findOne({ username });
+
+      
       
         // Check if account exists
         if (!account) {
@@ -186,13 +191,13 @@ app.post("/newusername", async (req, res) => {
         }
 
         // Check if the new username already exists
-        const existingAccount = await Account.findOne({ username: newusername });
+        const existingAccount = await Account.findOne({ username: newUsername });
         if (existingAccount) {
             return res.status(400).json({ message: "Username already exists" });
         }
 
         // Update the username
-        account.username = newusername;
+        account.username = newUsername;
         await account.save();
 
         console.log("Username changed successfully");
