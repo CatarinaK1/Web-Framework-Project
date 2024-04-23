@@ -12,6 +12,7 @@ import TrainSchedule from './TrainSchedule';
 const Home = () => {
   // Calendar
   const [startDate, setStartDate] = useState(new Date());
+
   const [departure, setDeparture] = useState('HL');
   const [destination, setDestination] = useState('HKI');
   const [searchClicked, setSearchClicked] = useState(false);
@@ -21,6 +22,7 @@ const Home = () => {
     console.log(Date);
     setSearchClicked(true);
   };
+
   
   async function saveFavorite(){
     const token = localStorage.getItem('accessToken');
@@ -58,16 +60,19 @@ const Home = () => {
         <div className="col">
           {/* Departure input */}
         <h3>Departure <IoLocationSharp className={HomeCSS.LocationIcon}/></h3>
+
           <input list="stations" type="text" onChange={(e) =>setDeparture(e.target.value)} className="form-control" placeholder="From" />
           <datalist id="stations">
               {passengerstations.map((station, index) => (
                 <option key={index} value={station.stationShortCode}>{station.stationName}</option>
               ))}
             </datalist>
+
         </div>
         <div className="col">
           {/* Destination input */}
           <h3>Destination <IoLocationSharp className={HomeCSS.LocationIcon}/></h3>
+
           <input list="stations" type="text" onChange={(e) =>setDestination(e.target.value)} className="form-control" placeholder="To" />
 
         </div>

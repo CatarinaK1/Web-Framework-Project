@@ -64,3 +64,18 @@
   
   }
   
+
+
+  .error{
+    color: #e80000;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .CreateAccount{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
