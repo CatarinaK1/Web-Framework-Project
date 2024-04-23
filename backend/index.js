@@ -264,3 +264,19 @@ app.post("/savefavorite", authenticateToken , async (req, res) => {
 }
 
 );
+
+// Get favorite destinations
+app.get("/getfavorite", authenticateToken, async (req, res) => {
+    try {
+        const UserId = req.user.id;
+        
+        // Find favorite trips for the authenticated user
+        const favoriteTrips = await TrainTrips.find({ UserId });
+        console.log(favoriteTrips)
+        res.status(200).json({ favoriteTrips });
+        
+    } catch (error) {
+        console.error("Error:", error);
+        res.status(500).json({ error: "Internal server error" });
+    }
+});
