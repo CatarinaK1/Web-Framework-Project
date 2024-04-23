@@ -42,11 +42,12 @@ function TrainNavbar() {
       <Navbar collapseOnSelect expand="lg" className={NavbarCSS.navbar}>
         <Container>
           <FaTrainSubway className="icon" />
-          <Navbar.Brand href="/"> TrainAPI</Navbar.Brand>
+          <Navbar.Brand href="#home"> TrainAPI</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
+
             {isLoggedIn ? (
               <>
                 <Nav.Link>Welcome, {user}</Nav.Link>

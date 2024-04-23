@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import HomeCSS from './home.module.css';
 import { MdLocationPin } from "react-icons/md";
+
 import axios from 'axios';
+
 
 const FavoriteDestination = () => {
   const [favoriteDestinations, setFavoriteDestinations] = useState([]);
