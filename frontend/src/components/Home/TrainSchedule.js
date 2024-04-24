@@ -1,76 +1,51 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react'; // Import useState from React
 import TrainCSS from './trainSchedule.module.css';
 import { FaTrainSubway } from 'react-icons/fa6';
 import { BiCurrentLocation } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
-import searchTrains from './scheduleData'; // js for searching trains with api
 
+const TrainSchedule = () => {
+    // Sample data for train schedule
+    const scheduleData = [
+      { Departurehour: '08:00', Arrivalhour: '12:45',train: 'Express 123', track: 'A' },
+      { Departurehour: '10:30', Arrivalhour: '12:45',train: 'Local 456', track: 'B' },
+      { Departurehour: '12:45', Arrivalhour: '12:45',train: 'Express 789', track: 'C' },
+      { Departurehour: '08:00', Arrivalhour: '12:45',train: 'Express 123', track: 'A' },
+      { Departurehour: '10:30', Arrivalhour: '12:45', train: 'Local 456', track: 'B' },
+      { Departurehour: '12:45', Arrivalhour: '12:45',train: 'Express 789', track: 'C' },
+      { Departurehour: '08:00', Arrivalhour: '12:45',train: 'Express 123', track: 'A' }
 
-const TrainSchedule = ({ Search1 = 'TPE', Search2 = 'HL' , isoString = ''}) => {
-  const [departureCity, setDepartureCity] = useState('Tampere');
-  const [destinationCity, setDestinationCity] = useState('Hämeenlinna');
-  const [scheduleData, setScheduleData] = useState([]);
-  //console.log("sascömöckaölkckmamcökaofeadsad");
-  //console.log(isoString);
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await searchTrains(Search1, Search2, isoString);
-      setScheduleData(data);
-    };
+      // Add more schedule data as needed
+    ];
 
-    fetchData();
-  }, [Search1, Search2, isoString]);
-
-  useEffect(() => {
-    // Päivitä kaupunkitiedot aina, kun hakutiedot muuttuvat
-    setDepartureCity(Search1);
-    setDestinationCity(Search2);
-  }, [Search1, Search2, isoString]);
-
-  const renderScheduleRows = (scheduleData) => {
-    return scheduleData.map((item, index) => (
-      <div className={`row ${TrainCSS.scheduleRow}`} key={index}>
-        <div className="col">
-          <p>{item.Departurehour}</p>
-        </div>
-        <div className="col">
-          <p>{item.Arrivalhour}</p>
-        </div>
-        <div className="col">
-          <p>{item.train}</p>
-        </div>
-        <div className="col">
-          <p>{item.track}</p>
-        </div>
-      </div>
-    ));
-  };
-
-  const renderTrainSchedule = () => {
+    // Sample for city name data
+    const [departureCity, setDepartureCity] = useState('Helsinki');
+    const [destinationCity, setDestinationCity] = useState('Tampere');
+  
     return (
       <section className={TrainCSS.trainScheduleSection}>
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <div className={TrainCSS.TrainScheduleTitle}>
-                <FaTrainSubway className={TrainCSS.TrainScheduleTitleIcon} />
-                <h2>Train Schedule</h2>
+            <div className={TrainCSS.TrainScheduleTitle}>
+              <FaTrainSubway className={TrainCSS.TrainScheduleTitleIcon}/>
+              <h2>Train Schedule</h2>
+            </div>
+            <div className={TrainCSS.DepartureDestinationContainer}>
+              <div className={TrainCSS.TrainDestinationDeparture}>
+                <p>Departure</p>
+                <div className={TrainCSS.CityandIcon}>
+                  <BiCurrentLocation className={TrainCSS.LocationIcon}/>
+                  <h3>{departureCity}</h3>
+                </div>
               </div>
-              <div className={TrainCSS.DepartureDestinationContainer}>
-                <div className={TrainCSS.TrainDestinationDeparture}>
-                  <p>Departure</p>
-                  <div className={TrainCSS.CityandIcon}>
-                    <BiCurrentLocation className={TrainCSS.LocationIcon} />
-                    <h3>{departureCity}</h3>
-                  </div>
+              <div className={TrainCSS.TrainDestinationDeparture}>
+              <p >Destination </p>
+              <div className={TrainCSS.CityandIcon}>
+                <FaLocationDot className={TrainCSS.LocationIconDestination}/>
+                <h3>{destinationCity}</h3>
                 </div>
-                <div className={TrainCSS.TrainDestinationDeparture}>
-                  <p>Destination </p>
-                  <div className={TrainCSS.CityandIcon}>
-                    <FaLocationDot className={TrainCSS.LocationIconDestination} />
-                    <h3>{destinationCity}</h3>
-                  </div>
-                </div>
+              </div>
               </div>
             </div>
             <div className={`col-md-8 ${TrainCSS.trainSchedule}`}>
@@ -88,17 +63,28 @@ const TrainSchedule = ({ Search1 = 'TPE', Search2 = 'HL' , isoString = ''}) => {
                   <h3>Track</h3>
                 </div>
               </div>
-              {renderScheduleRows(scheduleData)}
+              {/* Render train schedule data */}
+              {scheduleData.map((item, index) => (
+                <div className={`row ${TrainCSS.scheduleRow}`} key={index}>
+                  <div className="col">
+                    <p>{item.Departurehour}</p>
+                  </div>
+                  <div className="col">
+                    <p>{item.Arrivalhour}</p>
+                  </div>
+                  <div className="col">
+                    <p>{item.train}</p>
+                  </div>
+                  <div className="col">
+                    <p>{item.track}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
     );
   };
-  if (!scheduleData) {
-    return <p>No trains were found for this route.</p>; // Näytä latausviesti, jos scheduleData ei ole vielä saatavilla
-  }
-  return renderTrainSchedule();
-};
-
-export default TrainSchedule;
+  
+  export default TrainSchedule;
