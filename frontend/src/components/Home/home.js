@@ -5,23 +5,14 @@ import { FaCalendarDays } from "react-icons/fa6";
 import HomeCSS from './home.module.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import passengerstations from '../../stationsjson/passengerstations.json';
-import FavoriteDestination from './FavoriteDestination';
-import TrainSchedule from './TrainSchedule';
+
 
 const Home = () => {
   // Calendar
   const [startDate, setStartDate] = useState(new Date());
-
-  const [departure, setDeparture] = useState('HL');
-  const [destination, setDestination] = useState('HKI');
-  const [searchClicked, setSearchClicked] = useState(false);
+  const [departure, setDeparture] = useState('');
+  const [destination, setDestination] = useState('');
   
-  const handleSubmit = (event) => {
-    event.preventDefault(); // Estä lomakkeen oletuslähetyskäyttäytyminen
-    console.log(Date);
-    setSearchClicked(true);
-  };
 
   
   async function saveFavorite(){
@@ -53,28 +44,19 @@ const Home = () => {
       
     {/* Search form for trips | Need to connect this to API */}
     <div className={HomeCSS.TrainForm}>
-  <form onSubmit={handleSubmit}>
+  <form>
     <div className="form-row">
     <h2>Travelling routes</h2>
       <div className="row">
         <div className="col">
           {/* Departure input */}
         <h3>Departure <IoLocationSharp className={HomeCSS.LocationIcon}/></h3>
-
-          <input list="stations" type="text" onChange={(e) =>setDeparture(e.target.value)} className="form-control" placeholder="From" />
-          <datalist id="stations">
-              {passengerstations.map((station, index) => (
-                <option key={index} value={station.stationShortCode}>{station.stationName}</option>
-              ))}
-            </datalist>
-
+          <input type="text" onChange={(e) =>setDeparture(e.target.value)} className="form-control" placeholder="From" />
         </div>
         <div className="col">
           {/* Destination input */}
           <h3>Destination <IoLocationSharp className={HomeCSS.LocationIcon}/></h3>
-
-          <input list="stations" type="text" onChange={(e) =>setDestination(e.target.value)} className="form-control" placeholder="To" />
-
+          <input type="text" onChange={(e) =>setDestination(e.target.value)} className="form-control" placeholder="To" />
         </div>
         <div className="col">
           {/* Date input */}
@@ -95,8 +77,7 @@ const Home = () => {
     </div>
   </form>
 </div>
-<FavoriteDestination />
-{searchClicked && <TrainSchedule Search1={departure} Search2={destination} />}
+
     </section>
 
   );

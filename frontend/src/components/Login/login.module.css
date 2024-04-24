@@ -1,49 +1,80 @@
-/* LoginForm.css */
-.login-container {
-    display: flex;
-    align-items: center;
-  }
+.loginContainer {
+  display: flex;
+  align-items: center;
+}
+
+.CreateAccount{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.Travelerimage{
+  width: 95%;
+}
+
+.imageColumn {
+  flex: 1;
   
-  .login-form {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+}
+
+.loginForm {
+  flex: 1;
+  padding: 20px;
+  align-self: center;
+}
+
+.loginForm form {
+  display: flex;
+  flex-direction: column;
   
-  .form-group {
-    margin-bottom: 15px;
-  }
+}
+
+.loginForm h1 {
+  font-size: 48px;
+  color: #119DA4;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #e80000;
+}
+
+.loginForm h2 {
+  font-size: 18px;
+  color: #0C445A;
+}
+.loginForm .formGroup {
+  margin-bottom: 10px;
+}
+
+
+.loginForm input {
+
+  height: 48px;
+  width: 400px;
+  font-size: large;
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding-left: 8px;
+  background-color: #eaeef1;
+}
+
+
+.loginForm button {
+  color: white;
+  border: none;
+  border-radius: 30px;
+  background-color: #119DA4;
+  margin: 5px;
+  padding: 10px 60px 10px 60px;
+
   
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input {
-    width: 50%;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  
-  .red-column {
-    width: 100px;
-    height: 100%;
-    background-color: red;
-  }
-  
+
+}
+
+
+.error{
+  color: #e80000;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}

@@ -23,10 +23,8 @@ const App = () => {
     setIsLoggedIn(!!token);
   }, []);
 
-
  /* let log = "inactive"
   if (isLoggedIn) log = "active"*/
-
 
 
   return (
@@ -36,19 +34,15 @@ const App = () => {
         <Routes>
 
           
-
-          <Route path="/" element={<><Home /></>}/>
+          <Route path="/" element={<><Home /><FavoriteDestination /><TrainSchedule /></>}/>
 
           {isLoggedIn && <Route path="/usersettings" element={<UserSettings />} />}
-
           <Route path="/login" element={<><LoginPage /></>}/>
           <Route path="/signup" element={<SignUpPage/>}/>
 
 
         </Routes>
-
         {/* {log} */}
-
 
       {/* </div> */}
       <Footer />
