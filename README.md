@@ -1,6 +1,6 @@
 # Backend Project Assignment
 
-The of goal this project is to develop a comprehensive train travel API, facilitating users in effortlessly discovering available trips between cities. Users will have the ability to create personalized accounts, enabling them to conveniently save their most frequented routes for future reference.
+The goal of this project was to develop a comprehensive train travel API that facilitates users in effortlessly discovering available trips between cities. Users will have the ability to create personalized accounts, enabling them to conveniently save their most frequented routes for future reference.
 
 
 
